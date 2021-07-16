@@ -46,9 +46,9 @@ function openRequest() {
             arr_qp.push(param[0]+"="+param[1])
     }
     uri=params.get('uri');
-    var fulluri=uri+'?'+arr_qp.join('&')
-    console.log(fulluri)
-    document.location.assign(fulluri);
+    //var fulluri=uri+'?'+arr_qp.join('&')
+    console.log(uri)
+    document.location.assign(uri);
   
 }
 
@@ -57,5 +57,5 @@ function openRequest() {
 function loadComercio(){
       const params = new URLSearchParams(window.location.search)
 
-      document.location.assign(params.get('uri')+'/'+params.get('CUS'));
+      document.location.assign(params.get('uri')); //+'/'+params.get('CUS')
          }
