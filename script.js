@@ -46,9 +46,9 @@ function openRequest() {
             arr_qp.push(param[0]+"="+param[1])
     }
     uri=params.get('uri');
-    //var fulluri=uri+'?'+arr_qp.join('&')
-    console.log(uri)
-    document.location.assign(uri);
+    var fulluri=uri+'?'+arr_qp.join('&')
+    console.log(fulluri)
+    document.location.assign(fulluri);
   
 }
 
