@@ -47,8 +47,8 @@ function openRequest() {
     }
     uri=params.get('uri');
     //var fulluri=uri+'?'+arr_qp.join('&')
-    console.log(uri)
-    document.location.assign(uri);
+    console.log(fulluri)
+    document.location.assign(fulluri);
   
 }
 
